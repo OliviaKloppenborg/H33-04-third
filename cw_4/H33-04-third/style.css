@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(
+        90deg,
+        #D460A7,
+        #E4ADCD,
+        #FFFFFF,
+        #57CEF8,
+        #FFFFFF,
+        #E4ADCD,
+        #D460A7
+    );
+    background-size: 300% 300%;
+    animation: movingGradient 12s ease infinite;
+}
+
+h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(3rem, 10vw, 9rem);
+    font-weight: 900;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@keyframes movingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
